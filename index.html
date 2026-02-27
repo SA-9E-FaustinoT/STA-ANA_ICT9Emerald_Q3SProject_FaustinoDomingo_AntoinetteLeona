@@ -10,19 +10,52 @@
 </head>
 
 <style>
+	body{
+		background-image:url(https://images.topgear.com.ph/topgear/images/2019/07/07/taft-avenue-manila-city-clearing-operations-02-1562485845.jpg);			
+        font-family: 'Courier New', Courier, monospace;
+        background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+        background-color: #111;
+	}  
+	
+	.card {
+    position: center;
+    width: 60%;
+    margin: auto;
+    top: 25%;
+    background: rgba(227, 111, 118, 0.917);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    place-items: center ;
 
-body {
-    background-image:url(https://images.topgear.com.ph/topgear/images/2019/07/07/taft-avenue-manila-city-clearing-operations-02-1562485845.jpg);			
-    font-family: 'Courier New', Courier, monospace;
-    background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-    background-color: #111;
+    }
+
+    .mission-card {
+    position: center;
+    width: 60%;
+    margin: auto;
+    top: 25%;
+    background-color: #ffe134c2;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    place-items: center ;
+    
+    }
+
+
+	.footer {
+    background: #111;
     color: white;
+    text-align: center;
+    padding: 12px;
+	background-color: aliceblue;
+    color: rgb(7, 0, 0);
 }
 
-
-.navbar {
+  .navbar {
     position: center;
     top: 0;
     width: 100%;
@@ -40,7 +73,7 @@ body {
 
   .nav-right button {
     padding: 8px 14px;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: #ffe734;
     cursor: pointer;
   }
@@ -49,149 +82,10 @@ body {
     background-color: #6cb4e1;
   }
 
-.create-btn {
-    background-color: #00bcd4;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-}
+</style>
 
-/* Hero Background */
-.hero {
-    height: 90vh;
-    background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Registration Card */
-.registration-card {
-    display: flex;
-    width: 800px;
-    background: #6cb4e1e4;
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 30px;
-}
-
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 12px;
-	background-color: aliceblue;
-    color: rgb(7, 0, 0);
-}
-
-/* Left Panel */
-.left-panel {
-    width: 40%;
-    text-align: center;
-}
-
-.profile-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px;
-    font-size: 14px;
-}
-
-.upload-btn {
-    margin-top: 10px;
-    background-color: #ffe734;
-    border: none;
-    padding: 8px 12px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Right Panel */
-.right-panel {
-    width: 60%;
-    padding-left: 10px;
-}
-
-.right-panel h1 {
-    margin-bottom: 15px;
-}
-
-.instructions {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-.row {
-    display: flex;
-    gap: 10px;
-}
-
-.row div {
-    flex: 1;
-}
-
-.terms {
-    margin-top: 15px;
-    font-size: 13px;
-}
-
-.submit-btn {
-    width: 100%;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #ffe734;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cancel-btn {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 12px;
-	background-color: aliceblue;
-    color: rgb(7, 0, 0);
-}
-
-    </style>
-</head>
 <body>
-
-   <nav class="navbar navbar-expand-sm  navbar-front shadow-sm" style="background-color: #6cb4e1;">
+	<nav class="navbar navbar-expand-sm  navbar-front shadow-sm" style="background-color: #6cb4e1;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="luckiiicn.PNG" alt="Logo" style="width: 80px;">
@@ -213,41 +107,67 @@ form input {
             <a class="nav-link" href="tut.html">Tutorial Page</a>
           </li>
         </ul>
+
          <button class="btn btn-primary" type="button" style="background-color: #ffdd34;" style="color: #111;"><a class="nav-link" href="loadcard.html">Load Card</a></button>
           </ul>
     </div>
   </nav>
 
-<br><br><br>
- <section class="hero">
+  <br><br><br>  <br>
 
-<div class="registration-card">
-    <div class="left-panel">
-        <img src="uhoh.PNG" style="width: 200px;">
-        <br><br><br><br><br><br><br>
-        <img src="starr.png" style="width: 75px;"
-        <br><br><br><br><br><br><br>
-        <img src="luckiicard.png" style="width: 250px;">
-    </div>
-    <div class="right-panel">
-<p>Let's quickly run through the steps of using this site!</p>
+ <div class="card">
+        <img src="luckii.PNG" class="logo" style="width: 150px;">
+        <br>
+        <img src="stars.png" class="logo" style="height: 20px;" style="width: 10px;">
+        <br>
+        <h1>Welcome to Luckii Transpo! (*ฅ́ ˘ฅ̀*)♡</h1>
+        <br>
+	<details ontoggle="message()">
+     <summary style="color: rgb(94, 16, 54);">Instructions🍀</summary>
+     	<p class="para1"> This site helps you navigate the twists and turns of daily commute!</p>
+	</details>
+    <br>
+
+    <div class="embed-map-responsive"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Manila&t=&z=13&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://sprunkiretake.net" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">Sprunki</a></div><style>.embed-map-responsive{position:relative;text-align:right;width:100%;height:0;padding-bottom:66.66666666666666%;}.embed-map-container{overflow:hidden;background:none!important;width:100%;height:100%;position:absolute;top:0;left:0;}.embed-map-frame{width:100%!important;height:100%!important;position:absolute;top:0;left:0;}</style></div>
+
+	</div>
+
+    <br>
+
+    <div class="mission-card">
+        <img src="luckii.PNG" class="logo" style="width: 150px;">
+        <br>
+        <img src="stars.png" class="logo" style="height: 20px;" style="width: 10px;">
+        <br>
+        <h1>Our Mission (˚0˚)!!</h1>
+        <br>
+	<details ontoggle="message()">
+     <summary style="color: rgb(94, 16, 54);"> Expand Summary </summary>
+     	<p class="para1"> As Luckii Clovers, we do our best to try and make transport smooth and easy, especially for students that have to commute daily! </p>
+	</details>
+    <br>
+
+    <p>Our mission is to help commuters- especially students- navigate stations, load their "Luckii" cards (or commonly known as beep cards), all in one place!</p>
+
+    <img src="late.PNG" class="logo" style="width: 500px;">
 <br>
-<p>First, make an account using the Registration Page. Upload a photo of you that you'd like to be the face of your profile, and fill out the necessary information.</p>
-<img src="regis.png" style="width: 300px;">
-<br><br><br><br>
-<p>After creating your account, go on to the Load Card tab and enter the desired ammount of credit into your card.</p>
 <br>
-<p>After that, congradulations! You can now use your Luckii Card to commute!</p>
-        </form>
- </section>
+    <p>Oh no! Looks like Luckii is going to be late to class! Let's try and help them load their card so they can commute!</p>
+     
 
-  
-</div>
+        <form class="d-flex" role="search">
+          
+    <button class="btn btn-primary" type="button" style="background-color: #ffdd34;" style="color: #111;"><a class="nav-link" href="tut.html">How To Use Luckii Transpo (ft. Luckii)</a></button>
+    </ul>
+    </li>
+    </ul>
+	</div>
+    </form>
 
-<br><br><br>
 
+	<br><br><br>
 
- <div class="footer">
+    <div class="footer">
         Antoinette Faustino and Leona Domingo | 9-Emerald ©2026
     </div>
 
@@ -255,7 +175,5 @@ form input {
 
 
 </body>
-
-
 
 </html>
