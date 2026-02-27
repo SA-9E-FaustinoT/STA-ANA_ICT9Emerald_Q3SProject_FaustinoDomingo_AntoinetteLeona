@@ -1,256 +1,204 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-	<title>Luckii Transpo</title>
-    <link rel="icon" type="image/png" href="luckiiicn.PNG">
-
-</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Luckii Transpo</title>
+<link rel="icon" type="image/png" href="luckiiicn.PNG">
 
 <style>
-
-body {
-    background-image:url(https://images.topgear.com.ph/topgear/images/2019/07/07/taft-avenue-manila-city-clearing-operations-02-1562485845.jpg);			
+body{
+    background-image: url(https://images.topgear.com.ph/topgear/images/2019/07/07/taft-avenue-manila-city-clearing-operations-02-1562485845.jpg);
     font-family: 'Courier New', Courier, monospace;
     background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #111;
-    color: white;
 }
 
+h1 {
+    font-weight: bold;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+    .section {
+    background-color: rgba(227, 111, 118, 0.917);
+    padding: 15px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.top {
+    background-color: #a4e16ce4;
+    color: white;
+    padding: 30px;
+}
+
+.section input, .section select, .section button {
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color:  #ffdd34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e6c900;
+}
+
+.remove-btn {
+    background-color: #a52053;
+}
+
+.remove-btn:hover {
+    background-color: #8d1543;
+}
 
 .navbar {
-    position: center;
-    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
     color: white;
+    background-color: #6cb4e1;
 }
 
-  .navbar a {
+.navbar a {
     color: white;
     text-decoration: none;
     margin-right: 20px;
 }
-
-  .nav-right button {
-    padding: 8px 14px;
-    color: white;
-    background-color: #ffe734;
-    cursor: pointer;
-  }
-  
-  .mynavbar{
-    background-color: #6cb4e1;
-  }
-
-.create-btn {
-    background-color: #00bcd4;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-}
-
-/* Hero Background */
-.hero {
-    height: 90vh;
-    background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Registration Card */
-.registration-card {
-    display: flex;
-    width: 800px;
-    background: rgba(227, 111, 118, 0.917);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 30px;
+.navbar .btn:hover {
+    background-color: #e6c900;
 }
 
 .footer {
-    background: #111;
-    color: white;
+    background-color: aliceblue;
+    color: rgb(7, 0, 0);
     text-align: center;
     padding: 12px;
-	background-color: aliceblue;
-    color: rgb(7, 0, 0);
 }
-
-/* Left Panel */
-.left-panel {
-    width: 40%;
-    text-align: center;
-}
-
-.profile-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px;
-    font-size: 14px;
-}
-
-.upload-btn {
-    margin-top: 10px;
-    background-color: #ffe734;
-    border: none;
-    padding: 8px 12px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Right Panel */
-.right-panel {
-    width: 60%;
-    padding-left: 10px;
-}
-
-.right-panel h1 {
-    margin-bottom: 15px;
-}
-
-.instructions {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-.row {
-    display: flex;
-    gap: 10px;
-}
-
-.row div {
-    flex: 1;
-}
-
-.terms {
-    margin-top: 15px;
-    font-size: 13px;
-}
-
-.submit-btn {
-    width: 100%;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #ffe734;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cancel-btn {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 12px;
-	background-color: aliceblue;
-    color: rgb(7, 0, 0);
-}
-
-    </style>
+</style>
 </head>
+
 <body>
-
-   <nav class="navbar navbar-expand-sm  navbar-front shadow-sm" style="background-color: #6cb4e1;">
+<nav class="navbar navbar-expand-sm navbar-front shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="luckiiicn.PNG" alt="Logo" style="width: 80px;">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #6cb4e1;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item"> 
-            <a class="nav-link" href="index.html">Home Page</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Registration page</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tut.html">Tutorial page</a>
-          </li>
-        </ul>
-         <button class="btn btn-primary" type="button" style="background-color: #ffdd34;" style="color: #111;"><a class="nav-link" href="loadcard.html">Load Card</a></button>
-          </ul>
-    </div>
-  </nav>
-
-<br><br><br>
- <section class="hero">
-
-<div class="registration-card">
-    <div class="left-panel">
-        <div class="profile-placeholder">
-            Profile Image
+        <a class="navbar-brand" href="#">
+            <img src="luckiiicn.PNG" alt="Logo" style="width: 80px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #6cb4e1;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tut.html">Tutorial Page</a>
+                </li>
+            </ul>
+           <button class="btn btn-primary" type="button" style="background-color: #ffdd34;" style="color: #111;"><a class="nav-link" href="loadcard.html">Load Card</a></button>
         </div>
     </div>
-    <div class="right-panel">
-<put stuff here></put>
+</nav>
 
-        </form>
-
- </section>
-
-    </div>
-
-  
+<div class="top">
+    <h1>Credit & Discount System</h1>
+    <h2>Current Balance: ₱<span id="balance">500.00</span></h2>
 </div>
+<br>
+<div class="section">
+    <h3>Credit Balance</h3>
+    <input type="number" id="addAmount" placeholder="Enter amount to add">
+    <button onclick="addCredit()">Add Credit</button>
+    <button class="remove-btn" onclick="removeCredit()">Remove Credit</button>
+</div>
+<br>
+<div class="section">
+    <h3>Discounts</h3>
+    <input type="number" id="price" placeholder="Enter price">
+    <select id="discountType">
+        <option value="0">No Discount</option>
+        <option value="15">Student (15%)</option>
+        <option value="20">Senior Citizen (20%)</option>
+        <option value="20">PWD (20%)</option>
+    </select>
+    <button onclick="useCredit()">Use Credit</button>
+    <p>Discounted Price: ₱<span id="discountedPrice">0.00</span></p>
+</div>
+
+<script>
+let balance = 500;
+
+function addCredit() {
+    let amount = Number(document.getElementById("addAmount").value);
+    if (amount > 0) {
+        balance += amount;
+        updateBalance();
+    } else {
+        alert("Enter a valid amount to add!");
+    }
+    document.getElementById("addAmount").value = "";
+}
+function removeCredit() {
+    let amount = Number(document.getElementById("addAmount").value);
+    if (amount > 0 && amount <= balance) {
+        balance -= amount;
+        updateBalance();
+    } else {
+        alert("Invalid amount or not enough balance to remove!");
+    }
+    document.getElementById("addAmount").value = "";
+}
+function useCredit() {
+    let price = Number(document.getElementById("price").value);
+    let discount = Number(document.getElementById("discountType").value);
+    if (price <= 0) {
+        alert("Enter a valid price!");
+        return;
+    }
+    let discountedPrice = price - (price * discount / 100);
+    document.getElementById("discountedPrice").textContent = discountedPrice.toFixed(2);
+
+    if (discountedPrice > balance) {
+        alert("Not enough balance!");
+    } else {
+        balance -= discountedPrice;
+        updateBalance();
+    }
+    document.getElementById("price").value = "";
+}
+
+function updateBalance() {
+    document.getElementById("balance").textContent = balance.toFixed(2);
+}
+</script>
 
 <br><br><br>
-
-
- <div class="footer">
-        Antoinette Faustino and Leona Domingo | 9-Emerald ©2026
-    </div>
-
+<div class="footer">
+    Antoinette Faustino and Leona Domingo | 9-Emerald ©2026
 </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
 </html>
